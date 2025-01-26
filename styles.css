@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background-color: #989690;
+    padding: 20px;
+}
+
+.logo-container {
+    display: inline-flex;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 2px solid #ffffff; /* Border untuk logo */
+    padding: 0px; /* Jarak antara logo dan border */
+}
+
+.logo {
+    width: 50px; /* Ukuran logo */
+    height: 50px; /* Ukuran logo */
+    object-fit: cover; /* Menjaga proporsi gambar */
+}
+
+header h1 {
+    font-size: 2em;
+    color: #ffffff;
+}
+
+nav {
+    background-color: #c6c3ba;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card .content {
+    padding: 10px;
+    text-align: center;
+}
+
+.card .content h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.card .content p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.card .content .price {
+    font-size: 1em;
+    color: #e5bb50;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.card .content button {
+    padding: 8px 15px;
+    background-color: #e5bb50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card .content button:hover {
+    background-color: #e5bb50;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+.hero {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.039), rgba(0, 0, 0, 0.189)),
+    url(img/ppp.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30vh;
+    font-size: 10px;
+    text-align: center;
+    color: #ffffff;
+    padding: 100px;
+    
+    
+}
